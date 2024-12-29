@@ -13,24 +13,11 @@
   "license": "Apache License 2.0",
   "icon": "assets/narratorbegone/icon.png",
   "environment": "client",
-  "entrypoints": {
-    "client": [
-      "me.tori.narratorbegone.client.NarratorBeGoneClient"
-    ],
-    "main": [
-      "me.tori.narratorbegone.NarratorBeGone"
-    ]
-  },
   "mixins": [
     "narratorbegone.mixins.json"
   ],
   "depends": {
-    "fabricloader": ">=${loader_version}",
-    "minecraft": "${minecraft_version}"
-  },
-  "custom": {
-    "modmenu": {
-      "update_checker": true
-    }
+    "fabricloader": ">=0.15",
+    "minecraft": "1.16.1"
   }
 }

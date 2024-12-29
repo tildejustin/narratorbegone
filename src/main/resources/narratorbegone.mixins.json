@@ -3,12 +3,16 @@
   "minVersion": "0.8",
   "package": "me.tori.narratorbegone.mixin",
   "compatibilityLevel": "JAVA_8",
-  "mixins": [
-  ],
   "client": [
-    "MixinKeyboard"
+    "NarratorLinuxMixin",
+    "NarratorOSXMixin",
+    "NarratorWindowsMixin"
   ],
   "injectors": {
     "defaultRequire": 1
+  },
+  "overwrites": {
+    "conformVisibility": true,
+    "requireAnnotations": true
   }
 }
